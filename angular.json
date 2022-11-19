@@ -3,5 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "cm-components-lib": {
+      "projectType": "library",
+      "root": "projects/cm-components-lib",
+      "sourceRoot": "projects/cm-components-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/cm-components-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/cm-components-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/cm-components-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/cm-components-lib/src/test.ts",
+            "tsConfig": "projects/cm-components-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/cm-components-lib/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }
