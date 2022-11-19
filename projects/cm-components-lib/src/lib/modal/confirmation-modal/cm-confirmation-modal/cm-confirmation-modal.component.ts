@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialogRef} from "@angular/material/dialog";
 
 @Component({
   selector: 'lib-cm-confirmation-modal',
@@ -9,7 +10,7 @@ export class CmConfirmationModalComponent {
 
   private _msg = '';
 
-  constructor() { }
+  constructor(private dialogRef: MatDialogRef<CmConfirmationModalComponent>) { }
 
   cancel() {
 
