@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CmConfirmationModalComponent } from './confirmation-modal/cm-confirmation-modal/cm-confirmation-modal.component';
+import {SharedModule} from "../shared/shared.module";
+
 
 
 
@@ -9,7 +11,8 @@ import { CmConfirmationModalComponent } from './confirmation-modal/cm-confirmati
     CmConfirmationModalComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class ModalModule { }
