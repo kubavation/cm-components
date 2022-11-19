@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CmConfirmationModalComponent {
 
+  private _msg = '';
+
   constructor() { }
 
+  cancel() {
+
+  }
+
+  save() {
+
+  }
 }
