@@ -1,18 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CmComponentsLibComponent } from './cm-components-lib.component';
-import {ModalModule} from "./modal/modal.module";
+import {CmModalModule} from "./modal/cm-modal.module";
+import {CmButtonModule} from "./button/cm-button.module";
 
 
 
 @NgModule({
-  declarations: [
-    CmComponentsLibComponent
-  ],
+  declarations: [],
   imports: [
-   ModalModule
-  ],
-  exports: [
-    CmComponentsLibComponent
+   CmModalModule,
+   CmButtonModule
   ]
 })
 export class CmComponentsLibModule { }
