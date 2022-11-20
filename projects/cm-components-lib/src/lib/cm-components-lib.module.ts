@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CmComponentsLibComponent } from './cm-components-lib.component';
+import {ModalModule} from "./modal/modal.module";
 
 
 
@@ -8,6 +9,7 @@ import { CmComponentsLibComponent } from './cm-components-lib.component';
     CmComponentsLibComponent
   ],
   imports: [
+   ModalModule
   ],
   exports: [
     CmComponentsLibComponent
