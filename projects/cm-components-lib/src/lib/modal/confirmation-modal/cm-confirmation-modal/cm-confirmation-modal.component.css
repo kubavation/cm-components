@@ -12,3 +12,12 @@
   font-weight: bold;
   color: darkred
 }
+
+.confirm-button {
+  background-color: darkred;
+  color: white
+}
+
+.dark-red {
+  color: darkred;
+}
