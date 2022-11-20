@@ -19,11 +19,11 @@ export class CmConfirmationModalComponent {
     }
   }
 
-  cancel() {
-
+  cancel(): void {
+    this.dialogRef.close(false);
   }
 
-  save() {
-
+  save(): void {
+    this.dialogRef.close(true);
   }
 }
