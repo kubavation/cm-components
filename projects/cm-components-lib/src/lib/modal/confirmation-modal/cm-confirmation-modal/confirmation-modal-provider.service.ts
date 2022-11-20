@@ -8,7 +8,7 @@ export class ConfirmationModalProviderService {
 
   constructor(private dialog: MatDialog) {}
 
-  public show(msg: string): Observable<any> {
+  public show(msg: string): Observable<boolean> {
     return this.dialog.open(CmConfirmationModalComponent, {
       width: '500px',
       height: '400px',
