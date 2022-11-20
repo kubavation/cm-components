@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {MatDialogRef} from "@angular/material/dialog";
+import {ChangeDetectionStrategy, Component, Inject} from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 
 @Component({
   selector: 'lib-cm-confirmation-modal',
@@ -11,7 +11,13 @@ export class CmConfirmationModalComponent {
 
   private _msg = '';
 
-  constructor(private dialogRef: MatDialogRef<CmConfirmationModalComponent>) { }
+  constructor(private dialogRef: MatDialogRef<CmConfirmationModalComponent>,
+              @Inject(MAT_DIALOG_DATA) dialogData: {object: string}) {
+
+    if (dialogData) {
+      this._msg = dialogData.object;
+    }
+  }
 
   cancel() {
 
