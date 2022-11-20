@@ -3,11 +3,12 @@ import {MatDialog} from "@angular/material/dialog";
 import {filter, Observable} from "rxjs";
 import {CmConfirmationModalComponent} from "./cm-confirmation-modal.component";
 
-@Injectable({providedIn: 'root'})
+@Injectable({
+  providedIn: 'root'
+})
 export class ConfirmationModalProviderService {
 
   constructor(private dialog: MatDialog) {
-
   }
 
   public show(msg: string): Observable<boolean> {
