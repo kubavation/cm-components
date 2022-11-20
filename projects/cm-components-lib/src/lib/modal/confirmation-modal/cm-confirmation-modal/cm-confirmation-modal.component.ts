@@ -9,7 +9,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 })
 export class CmConfirmationModalComponent {
 
-  private _msg = '';
+  _msg = '';
 
   constructor(private dialogRef: MatDialogRef<CmConfirmationModalComponent>,
               @Inject(MAT_DIALOG_DATA) dialogData: {object: string}) {
