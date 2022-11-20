@@ -7,3 +7,8 @@
 .mat-dialog-content-container {
   height: calc(100% - 96px);
 }
+
+.object-val {
+  font-weight: bold;
+  color: darkred
+}

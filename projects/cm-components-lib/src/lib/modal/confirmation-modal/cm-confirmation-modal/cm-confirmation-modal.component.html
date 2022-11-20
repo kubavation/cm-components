@@ -1,8 +1,8 @@
-<h2 mat-dialog-title>Confirmation</h2>
+<h2 mat-dialog-title>	<mat-icon style="color: darkred">warning</mat-icon> Confirmation</h2>
 <div mat-dialog-content class="mat-dialog-content-container">
-  <h4>Do you want to delete object: {{_msg}}</h4>
+  <h4>Do you want to delete object: <span class="object-val"> {{_msg}}</span> ?</h4>
 </div>
 <div mat-dialog-actions class="dialog-action-container">
-  <button mat-button (click)="cancel()">Cancel</button>
-  <button mat-button (click)="save()">Confirm</button>
+  <button mat-raised-button (click)="cancel()">Cancel</button>
+  <button mat-raised-button style="background-color: darkred; color: white" (click)="save()">Confirm</button>
 </div>

@@ -14,7 +14,7 @@ export class ConfirmationModalProviderService {
   public show(msg: string): Observable<boolean> {
     return this.dialog.open(CmConfirmationModalComponent, {
       width: '500px',
-      height: '400px',
+      height: '200px',
       data: {
         object: msg
       }
